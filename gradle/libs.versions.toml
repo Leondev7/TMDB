@@ -1,0 +1,61 @@
+[versions]
+min-sdk = "23"
+compile-sdk = "32"
+
+android-gradle = "7.2.2"
+kotlin-gradle = "1.7.10"
+
+androidx-activity = "1.5.0"
+androidx-fragment = "1.5.0"
+androidx-core = "1.8.0"
+androidx-lifecycle = "2.5.0"
+coil = "1.3.2"
+androidx-navigation="2.5.0"
+compose-activity = "1.5.1"
+compose-material = "1.0.0-beta02"
+compose-animation = "1.2.1"
+compose-tooling = "1.2.1"
+compose-lifecycle = "2.5.1"
+compose-test = "1.2.1"
+compose-core = "1.2.1"
+compose-compiler = "1.3.0"
+
+[libraries]
+androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidx-lifecycle" }
+androidx-activity = { module = "androidx.activity:activity-ktx", version.ref = "androidx-activity" }
+androidx-fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "androidx-fragment" }
+androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
+androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "androidx-navigation" }
+androidx-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "androidx-navigation" }
+compose-activity = { module = "androidx.activity:activity-compose", version.ref = "compose-activity" }
+compose-material = { module = "androidx.compose.material3:material3", version.ref = "compose-material" }
+compose-window = { module = "androidx.compose.material3:material3-window-size-class", version.ref = "compose-material" }
+compose-animation = { module = "androidx.compose.animation:animation", version.ref = "compose-animation" }
+compose-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-tooling" }
+compose-lifecycle = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "compose-lifecycle" }
+compose-test = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose-lifecycle" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose-core" }
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "android-gradle" }
+android = { id = "com.android.tools.build:gradle", version.ref = "android-gradle" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-gradle" }
+android-library = { id = "com.android.library", version.ref = "android-gradle" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin-gradle" }
+android-safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "androidx-navigation" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin-gradle" }
+
+[bundles]
+compose-debug = ["compose-ui",
+    "compose-activity",
+    "compose-material",
+    "compose-lifecycle",
+    "compose-animation",
+    "compose-tooling"]
+
+compose-release = ["compose-ui",
+    "compose-activity",
+    "compose-material",
+    "compose-lifecycle",
+    "compose-animation"]
