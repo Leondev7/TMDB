@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "TMDB"
-include(":app")
+include(":app",":core:ui",":core:navigation",":features:home:presentation")
