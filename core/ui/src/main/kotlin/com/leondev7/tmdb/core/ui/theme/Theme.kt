@@ -1,4 +1,4 @@
-package com.leondev7.tmdb.theme
+package com.leondev7.tmdb.core.ui.theme
 
 import android.app.Activity
 import android.os.Build

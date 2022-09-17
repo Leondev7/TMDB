@@ -42,6 +42,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.core)
+
     implementation(libs.compose.ui)
     implementation(libs.compose.material)
     implementation(libs.compose.tooling)
