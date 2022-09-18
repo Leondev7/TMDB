@@ -13,4 +13,14 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "TMDB"
-include(":app",":core:ui",":core:navigation",":features:home:presentation")
+include(
+    ":app",
+    ":core:ui",
+    ":core:navigation",
+    ":core:network",
+    ":features:home:presentation",
+    ":features:tvshows:di",
+    ":features:tvshows:presentation",
+    ":features:tvshows:data",
+    ":features:tvshows:domain"
+)

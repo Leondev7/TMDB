@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.leondev7.tmdb.core.ui"
+    namespace = "com.leondev7.tmdb.feature.home.presentation"
     compileSdk = libs.versions.compile.sdk.get().toInt()
 
     defaultConfig {
