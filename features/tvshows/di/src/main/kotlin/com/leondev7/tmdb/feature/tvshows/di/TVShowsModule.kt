@@ -18,6 +18,6 @@ class TVShowsModule{
     fun providesTVShowsRepository(
         tvShowsApiClient: TVShowsApiClient
     ): TVShowsRepository = TVShowsRepositoryImpl(
-        tvShowsApiClient = tvShowsApiClient
+        apiClient = tvShowsApiClient
     )
 }

@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("org.jetbrains.kotlin.kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -42,5 +44,19 @@ android {
 }
 
 dependencies {
+    implementation(project(":features:tvshows:domain"))
 
+    implementation(libs.androidx.core)
+    implementation(libs.androidx.lifecycle)
+
+    implementation(libs.compose.ui)
+    implementation(libs.compose.material)
+    implementation(libs.compose.tooling)
+    implementation(libs.compose.activity)
+
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.0-alpha02")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-alpha02")
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+    implementation("com.google.dagger:hilt-android:2.43.2")
+    kapt("com.google.dagger:hilt-compiler:2.43.2")
 }

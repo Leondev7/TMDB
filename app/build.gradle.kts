@@ -50,7 +50,8 @@ dependencies {
     implementation(project(":core:ui"))
     implementation(project(":core:network"))
     implementation(project(":features:tvshows:di"))
-    implementation(project(":features:tvshows:domain"))
+    implementation(project(":features:tvshows:presentation"))
+
     implementation(libs.androidx.core)
     implementation(libs.androidx.lifecycle)
 
@@ -58,6 +59,8 @@ dependencies {
     implementation(libs.compose.material)
     implementation(libs.compose.tooling)
     implementation(libs.compose.activity)
+
+    implementation("androidx.core:core-splashscreen:1.0.0")
 
     implementation("com.google.dagger:hilt-android:2.43.2")
     kapt("com.google.dagger:hilt-compiler:2.43.2")
